@@ -20,9 +20,14 @@
         <a href="{% url 'accountapp:detail' pk=user.pk %}">
             <span>MyPage</span>
         </a>
-        <a href="{% url 'accountapp:logout' %}?next={{ request.path }}">
-            <span>logout</span>
-        </a>
+
+        <form id="form-id" method="post" action="{% url 'accountapp:logout' %}?next={{ request.path }}">
+        {% csrf_token %}
+        <a href="#" onclick="document.forms['form-id'].submit();" >  logout </a>
+        </form>
+
+
         {% endif %}
+
     </div>
 </div>
