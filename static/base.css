@@ -22,3 +22,24 @@
         font-size: 13px;
     }
 }
+
+
+a {
+    color: black;
+}
+
+
+a:hover {
+    color: pink;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.newbie_header_nav {
+    margin: 0 0.5rem;
+}
+
+
+.newbie_header_nav {
+    margin: 1rem 0;
+}
