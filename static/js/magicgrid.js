@@ -301,5 +301,9 @@ for (let i = 0; i < masonrys.length; i++) {
     }, false);
 }
 
+setTimeout(() => {
+    magicGrid.positionItems();
+}, 0);
+
 
 magicGrid.listen();
